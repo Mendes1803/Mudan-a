@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="Gemini_Generated_Image_hu3vz4hu3vz4hu3v.png">
+
+    <title>Formulário de Mudança de Área PAC - Identificado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;700&family=Inter:wght@400;700;900&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Define a fonte padrão para o projeto e o cursor padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+            cursor: default; 
+        }
+        
+        /* Configurações de cores e customização do Tailwind */
+        :root {
+            --color-pac-green: #415A33; /* Primary */
+            --color-pac-yellow: #e0a638; /* Secondary */
+            --color-pac-red: #c95c52; /* Accent */
+            --color-pac-brown: #966946; /* Shadow Accent */
+        }
+
+        /* Fundo Limpo e Suave */
+        body {
+            background: linear-gradient(135deg, #f0fdf4 0%, #ffedd5 50%, #fef2f2 100%);
+            min-height: 100vh;
+        }
+
+        /* Card com efeito "Sticker" Layered */
+        .pac-card-sticker { 
+            position: relative;
+            transform: rotate(-0.5deg);
+            transition: all 0.4s ease-in-out;
+            border: 4px solid var(--color-pac-green); 
+            box-shadow: 8px 8px 0px var(--color-pac-red), 
+                        12px 12px 0px var(--color-pac-yellow); 
+            padding-right: 1.5rem; 
+        }
+        .pac-card-sticker:hover { 
+            transform: rotate(0deg) scale(1.01);
+            box-shadow: 10px 10px 0px var(--color-pac-red), 
+                        15px 15px 0px var(--color-pac-yellow);
+        }
+
+        /* Estilos de Campos (Mantidos) */
+        .pac-input-field-required { transition: all 0.3s ease-in-out; border: 2px solid var(--color-pac-yellow); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); font-size: 1.25rem; color: #1f2937; }
+        .pac-input-field-required:focus { outline: none; border-color: var(--color-pac-red); box-shadow: 0 0 0 3px rgba(85, 115, 68, 0.3); }
+        .pac-input-field-optional { transition: all 0.3s ease-in-out; border: 3px dashed var(--color-pac-yellow); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); font-size: 1.25rem; color: #1f2937; }
+        .pac-input-field-optional:focus { outline: none; border-color: var(--color-pac-red); box-shadow: 0 0 0 5px rgba(85, 115, 68, 0.3); }
+
+        .pac-subtitle { font-family: 'Inter', sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--color-pac-red); }
+        
+        /* CURSOR: Nenhuma regra de sobrescrita. */
+    </style>
+
+</head>
+<body class="p-4 sm:p-6 flex items-center justify-center min-h-screen"> 
+
+    <div class="pac-card-sticker w-full max-w-2xl bg-white p-6 sm:p-10 rounded-3xl"> 
+
+        <div class="flex flex-col items-center mb-4"> 
+            <img src="WhatsApp Image 2025-10-17 at 19.39.18.png" 
+                 alt="Logo PAC - Pequenos Aprendizados Culturais" 
+                 class="w-28 h-auto mb-3 drop-shadow-xl transition duration-500 transform hover:scale-110" 
+                 onerror="this.onerror=null; this.src='https://placehold.co/160x160/415A33/ffffff?text=LOGO+PAC';"
+            />
+
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-2"> 
+                <p class="pac-subtitle font-bold text-gray-800 text-center bg-secondary/30 px-3 py-1 rounded-lg border-2 border-primary/50 text-base sm:text-xl"> 
+                    Solicitação de mudança de Departamento / Nova Area
+                </p>
+            </div>
+            
+            <div class="w-64 h-2 flex justify-center space-x-1 my-3 shadow-inner rounded-full overflow-hidden"> 
+                <div class="w-1/3 h-full bg-primary"></div>
+                <div class="w-1/3 h-full bg-secondary"></div>
+                <div class="w-1/3 h-full bg-accent-red"></div>
+            </div>
+
+            <p class="text-sm sm:text-base text-gray-700 text-center w-full font-medium"> 
+                Preencha os campos abaixo para formalizar seu interesse em um novo cargo ou área.
+            </p>
+        </div>
+        
+        <form name="mudanca-form" method="POST" action="https://formsubmit.co/nicolymendes0318@gmail.com" class="space-y-4"> 
+
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="agradecimento.html"> 
+
+            <div> 
+                <label for="nome" class="block text-sm font-bold text-primary mb-1">Seu Nome Completo</label>
+                <input type="text" id="nome" name="Nome" required placeholder="Seu Nome" class="mt-1 block w-full px-5 py-3 rounded-xl pac-input-field-required text-lg" /> 
+            </div>
+
+            <hr class="border-t-2 border-secondary/50 my-6">
+
+            <div> 
+                <label for="area_atual" class="block text-sm font-bold text-primary mb-1">Departamento/Área Atual</label>
+                <input type="text" id="area_atual" name="Departamento Atual" required placeholder="Ex: Jornalismo..." class="mt-1 block w-full px-5 py-3 rounded-xl pac-input-field-required text-lg" /> 
+            </div>
+
+            <div> 
+                <label for="area_desejada" class="block text-sm font-bold text-primary mb-1">Departamento/Área Desejada</label>
+                <input type="text" id="area_desejada" name="Departamento Desejado" required placeholder="Ex: ADM..." class="mt-1 block w-full px-5 py-3 rounded-xl pac-input-field-required text-lg" /> 
+            </div>
+
+            <div class="p-4 rounded-xl bg-primary/10 shadow-xl border-4 border-accent-red/70"> 
+                <label for="justificativa" class="block text-base sm:text-lg font-extrabold text-primary mb-2"> 
+                    <span class="bg-primary text-secondary px-4 py-2 rounded-lg text-sm font-black shadow-xl">#Motivação</span> Justificativa e Motivação (Opcional): 
+                </label>
+                <textarea id="justificativa" name="Justificativa" rows="5" placeholder="Explique por que você gostaria dessa mudança." class="mt-1 block w-full px-5 py-3 rounded-xl pac-input-field-optional resize-y text-base sm:text-lg"></textarea> 
+            </div>
+            
+            <div class="pt-1"> 
+                <button type="submit"
+                        class="w-full flex items-center justify-center py-3 sm:py-3 px-4 rounded-full shadow-2xl text-xl sm:text-xl font-black text-white uppercase
+                               bg-accent-red hover:bg-primary transition duration-300 transform hover:scale-[1.03] active:scale-[0.98]
+                               focus:outline-none focus:ring-4 focus:ring-offset-4 focus:ring-accent-red/50"> 
+                    Formalizar Solicitação
+                </button>
+            </div>
+        </form>
+        
+        <p class="mt-4 text-center text-xs text-gray-500"> 
+            *Este formulário utiliza a tecnologia FormSubmit para envio de e-mail.
+        </p>
+
+    </div>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': 'var(--color-pac-green)',
+                        'secondary': 'var(--color-pac-yellow)',
+                        'accent-red': 'var(--color-pac-red)',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        title: ['Bebas Neue', 'sans-serif'],
+                        script: ['Great Vibes', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
